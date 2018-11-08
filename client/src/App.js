@@ -1,26 +1,29 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {
+  Header,
+  Container
+} from 'semantic-ui-react';
+import styled from 'styled-components';
+
+const BlackBody = styled.div`
+  font-family: 'K2D', sans-serif;
+  background-color: black;
+  color: white;
+  background-size: cover;
+  height: 1000px;
+`
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <BlackBody>
+        <Container>
+        <Header as='h1' color='teal'>Tony Choutdara</Header>
+        <Header as='h3' color='teal'>Web Developer</Header>
+        </Container>
+      </BlackBody>
     );
   }
 }
